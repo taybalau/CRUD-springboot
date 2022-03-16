@@ -42,6 +42,14 @@ public class FraudDetectionController {
         return new ResponseEntity<>(fraudDetection, fraudDetection == null ? HttpStatus.NO_CONTENT : HttpStatus.OK);
     }
 
+    @GetMapping(value = {"isFraud/{isFraud}"})
+    public ResponseEntity<Page<List<FraudDetection>>> getByFraud(@PathVariable Boolean isFraud, @PageableDefault(page = 0,
+            size = 50) Pageable pageable){
+
+        Page<List<FraudDetection>> fraudDetection = fraudDetectionService.getByFraud(isFraud, pageable);
+        return new ResponseEntity<>(fraudDetection, fraudDetection == null ? HttpStatus.NO_CONTENT : HttpStatus.OK);
+    }
+
     @DeleteMapping(value = "/{nameOrig}")
     public ResponseEntity<List<FraudDetection>> deleteByNameOrig(@PathVariable String nameOrig){
 

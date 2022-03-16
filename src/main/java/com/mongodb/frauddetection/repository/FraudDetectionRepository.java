@@ -18,6 +18,8 @@ public interface FraudDetectionRepository extends MongoRepository<FraudDetection
 
     FraudDetection findByNameOrig(String nameOrig);
 
+    Page<List<FraudDetection>> findByIsFraud(Boolean isFraud, Pageable pageable);
+
     @DeleteQuery
     void deleteByNameOrig(String nameOrig);
 

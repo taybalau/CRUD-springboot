@@ -31,6 +31,11 @@ public class FraudDetectionService {
         return fraudDetectionRepository.findByNameOrig(nameOrig);
     }
 
+    public Page<List<FraudDetection>> getByFraud(Boolean isFraud, Pageable pageable){
+
+        return fraudDetectionRepository.findByIsFraud(isFraud, pageable);
+    }
+
     public void deleteByNameOrig(String nameOrig){
 
         fraudDetectionRepository.deleteByNameOrig(nameOrig);
