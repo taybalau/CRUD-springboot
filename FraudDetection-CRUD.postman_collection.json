@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "5396b434-1738-40d5-a1d7-201717df79f0",
+		"name": "FraudDetection-CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/fraudDetection/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fraudDetection/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fraudDetection",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/fraudDetection/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fraudDetection/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fraudDetection",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/fraudDetection/type/{type}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fraudDetection/type/{type}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fraudDetection",
+						"type",
+						"{type}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/fraudDetection/nameOrig/{nameOrig}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fraudDetection/nameOrig/{nameOrig}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fraudDetection",
+						"nameOrig",
+						"{nameOrig}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/fraudDetection/{nameOrig}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fraudDetection/{nameOrig}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fraudDetection",
+						"{nameOrig}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/fraudDetection/{nameOrig}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fraudDetection/{nameOrig}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fraudDetection",
+						"{nameOrig}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/fraudDetection/isFraud/{isFalse}",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
